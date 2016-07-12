@@ -18,16 +18,6 @@ angular.module('app.services').factory('DataService', function ($http) {
                 .error(function (error) {
                     throw(error);
                 })
-        },
-        
-        getLocations: function (data) {
-            var locations = [];
-            for(var i in data) {
-                locations.push(data[i].location);
-            }
-            return locations;
         }
-            
-        
     }
 });
