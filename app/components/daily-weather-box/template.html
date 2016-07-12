@@ -1,0 +1,19 @@
+<div class="daily-weather-box col-lg-6 col-md-6 col-sm-6 col-xs-12" ng-show="weatherData !== null">
+    <div class="top-bar row"><i class=" wi wi-sunrise"></i>{{weatherData.astronomy.sunrise}}
+        <i class=" wi wi-sunset"></i>{{weatherData.astronomy.sunset}}</div>
+    <div class="main row">
+        <div class="city-name row ">{{weatherData.location.city}}</div>
+        <div class="parameter row">
+            <div class="temp  col-lg-5 col-md-5 col-sm-5 col-xs-5">{{weatherData.condition.temp}}<sup>F</sup> </div>
+            <div class="conditions col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                <div class="icon row"></div>
+                <div class="description row">{{weatherData.condition.text}}</div>
+            </div>
+            <div class="day row">{{weatherData.condition.date}}</div>
+
+        </div>
+
+    </div>
+    <forecast-table forecast="weatherData.forecast"></forecast-table>
+
+</div>

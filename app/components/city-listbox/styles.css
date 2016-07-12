@@ -1,0 +1,13 @@
+.city-listbox .table {
+    margin: 10px 10px 20px 10px;
+}
+
+.table-striped>tbody tr {
+
+    cursor: pointer;
+}
+/* beauty of working with bootstrap - !important :) */
+.selected {
+    background-color: #00b3ee!important;
+    color: #ffffff!important;
+}

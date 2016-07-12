@@ -1,0 +1,23 @@
+<div class="city-listbox col-lg-6 col-md-6 col-small-12">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>region</th>
+                <th>country</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="city in cities" ng-click="select($index)" ng-class="{selected: $index == selected}">
+            <td>{{$index}}</td>
+            <td>{{city.city}}</td>
+            <td>{{city.region}}</td>
+            <td>{{city.country}}</td>
+        </tr>
+        </tbody>
+
+    </table>
+    <button type="button" class="btn btn-primary" ng-show="selected!=undefined"
+            ng-click="getWeatherForCity()" style="float:right">Try me!</button>
+</div>

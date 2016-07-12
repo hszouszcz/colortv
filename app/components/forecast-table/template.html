@@ -1,0 +1,13 @@
+<div class="forecast-table">
+    <table class="table">
+        <tbody>
+            <tr ng-repeat="data in forecast">
+                <td>{{data.day}}</td>
+                <td><i class="wi" ng-class="data.icon"></i></td>
+                <td>{{data.high}}/{{data.low}}</td>
+                <td>{{data.text}}</td>
+                <td>{{data.date}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

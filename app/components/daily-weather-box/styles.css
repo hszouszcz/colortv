@@ -1,0 +1,69 @@
+.daily-weather-box {
+    background-color: darkorange;
+    color: white;
+    max-width: 320px;
+    /*max-height: 250px;*/
+    margin: 10px auto;
+
+}
+
+.daily-weather-box > .top-bar {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.daily-weather-box > .top-bar i{
+    margin-left:5px;
+    margin-right:7px;
+    font-size:15px;
+}
+
+.daily-weather-box > .top-bar i:last-child{
+    margin-left:100px;
+}
+
+.daily-weather-box > .main {
+    margin: 10px;
+    height:180px;
+}
+
+.daily-weather-box > .main > .city-name {
+    font-size:20px;
+
+    line-height:10px;
+    margin: 0 10px;
+}
+
+.daily-weather-box > .main > .parameter > .temp {
+    font-size:80px;
+    line-height:116px;
+    margin:10px;
+    float: left;
+
+}
+
+.daily-weather-box > .main > .parameter > .temp sup {
+    font-style: italic;
+    font-size:20px;
+    top: -2.5em;
+}
+
+.daily-weather-box > .main > .parameter > .conditions > .icon {
+    float: right;
+    line-height:50px;
+    font-size:75px;
+    padding-top: 10px;
+}
+
+.daily-weather-box > .main > .parameter >.conditions> .description {
+    clear: both;
+    float:right;
+    margin:auto;
+}
+
+.main .day {
+    clear: both;
+   text-align: center;
+}
