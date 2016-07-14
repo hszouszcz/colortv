@@ -54,13 +54,14 @@
     float: right;
     line-height:50px;
     font-size:75px;
-    padding-top: 10px;
+    padding: 10px 5px;
 }
 
 .daily-weather-box > .main > .parameter >.conditions> .description {
     clear: both;
     float:right;
     margin:auto;
+    padding: 0 10px;
 }
 
 .main .day {
