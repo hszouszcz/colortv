@@ -16,7 +16,7 @@ server.route(Routes);
 server.register({
     register: require('hapi-cors'),
     options: {
-        origins: ['http://localhost:9999']
+        origins: ['http://localhost:63342']
     }
 });
 
