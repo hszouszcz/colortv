@@ -17,9 +17,11 @@ angular.module('app.directives').directive('cityListBox', function (DataService)
             };
 
             scope.getWeatherForCity = function() {
+               $(element).find('#load-btn').text('Loading....');
                 DataService.getDataForSingleCity(scope.selectedItem.zipCode)
                     .then(function (result) {
                     scope.data = result.data;
+                        $(element).find('#load-btn').text('Try Me!');
                 });
             }
         }
